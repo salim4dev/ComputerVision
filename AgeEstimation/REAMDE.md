@@ -27,4 +27,4 @@ Le principe est simple :
 ![Exemple d'estimation d'âge](p6.PNG)
 
 ## Auteur
-Ton nom ou pseudo
+Salim4dev
