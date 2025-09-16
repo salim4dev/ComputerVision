@@ -11,7 +11,7 @@ Tu peux installer OpenCV avec :
 
 ```bash
 pip install opencv-python
-
+```
 ## Fonctionnement
 - Capture le flux vidéo depuis la webcam.
 - Convertit chaque image en niveaux de gris (nécessaire pour le détecteur Haar).
