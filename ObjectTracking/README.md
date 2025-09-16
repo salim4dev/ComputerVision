@@ -35,5 +35,13 @@ Tu peux changer le tracker dans le code selon tes besoins.
 - Met à jour la position de l’objet et affiche un rectangle autour.
 - Affiche un message LOST§ si l’objet est perdu.
 
-## Example
+## Exemple
+- Selection de l'objet à suivre
+![objdetector](objtrack2.PNG)
+- Tracking
+![objdetector](objtrack3.PNG)
+- Lost
+![objdetector](objtrack5.PNG)
+
+
 
