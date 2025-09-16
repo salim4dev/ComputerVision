@@ -23,4 +23,8 @@ Tu peux installer les dépendances avec :
 
 ```bash
 pip install opencv-python numpy
+```
+
+## Exemple
+![colordetector](colordetect1.PNG)
 
