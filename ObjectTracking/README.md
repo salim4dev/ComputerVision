@@ -37,11 +37,11 @@ Tu peux changer le tracker dans le code selon tes besoins.
 
 ## Exemple
 - Selection de l'objet à suivre
-![objdetector](objtrack2.PNG)
+- ![objdetector](objtrack2.PNG)
 - Tracking
-![objdetector](objtrack3.PNG)
+- ![objdetector](objtrack3.PNG)
 - Lost
-![objdetector](objtrack5.PNG)
+- ![objdetector](objtrack5.PNG)
 
 
 
