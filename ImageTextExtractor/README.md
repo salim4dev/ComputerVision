@@ -25,5 +25,8 @@ Le projet peut être exécuté directement sur Google Colab, sans configuration 
 - Packages Python : pytesseract, easyocr, opencv-python, pillow, matplotlib
 
 ## Exemple
+- Original
 ![imageBrut](s3.PNG)
-![Resultat](result.PNG)
+- Extraction
+![Resultat](result.png)
+![Resultat](result2.png)
