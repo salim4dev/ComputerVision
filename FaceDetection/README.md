@@ -18,3 +18,6 @@ pip install opencv-python
 - Détecte les visages présents dans l’image.
 - Dessine un rectangle vert autour de chaque visage détecté.
 - Affiche le flux vidéo en temps réel avec les rectangles.
+
+## Exemple
+![facedetect](facedetector1.PNG)
