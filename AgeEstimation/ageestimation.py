@@ -1,1 +1,55 @@
+# =========================================
+# Projet : Estimation de l'âge à partir d'une image
+# =========================================
+
+# 1️⃣ Installer les dépendances
+!pip install tensorflow keras opencv-python-headless deepface
+
+# 2️⃣ Importer les librairies
+from google.colab import files
+import cv2
+import matplotlib.pyplot as plt
+from deepface import DeepFace
+
+# 3️⃣ Téléverser l'image
+uploaded = files.upload()
+filename = list(uploaded.keys())[0]
+
+# 4️⃣ Afficher l'image
+img = cv2.imread(filename)
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+plt.imshow(img_rgb)
+plt.axis('off')
+plt.show()
+
+# 5️⃣ Estimation de l'âge
+result = DeepFace.analyze(img_path=filename, actions=['age'])
+
+# 6️⃣ Vérification du type de retour pour éviter l'erreur
+if isinstance(result, list):
+    age = result[0]['age']  # premier visage détecté
+else:
+    age = result['age']
+
+print("Âge prédit :", age)
+
+# 7️⃣ Optionnel : afficher l'image avec encadré et âge
+def draw_age_on_image(img_path, result):
+    img = cv2.imread(img_path)
+    faces = result if isinstance(result, list) else [result]
+
+    for face in faces:
+        x, y, w, h = face['region']['x'], face['region']['y'], face['region']['w'], face['region']['h']
+        age = face['age']
+        # Dessiner rectangle autour du visage
+        cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        # Écrire l'âge
+        cv2.putText(img, f'Age: {int(age)}', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,255,0), 2)
+
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    plt.imshow(img_rgb)
+    plt.axis('off')
+    plt.show()
+
+draw_age_on_image(filename, result)
 
