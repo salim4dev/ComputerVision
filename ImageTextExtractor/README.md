@@ -29,4 +29,4 @@ Le projet peut être exécuté directement sur Google Colab, sans configuration 
 ![imageBrut](s3.PNG)
 - Extraction
 ![Resultat](result.png)
-![Resultat](result2.png)
+![Resultat](result2.PNG)
